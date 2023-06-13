@@ -1,0 +1,29 @@
+# 忽略 node_modules 目录
+node_modules/
+
+# 忽略生成的构建文件
+dist/
+build/
+*.log
+
+# 忽略环境配置文件
+.env
+
+# 忽略临时文件
+*.tmp
+
+# 忽略编辑器生成的文件和目录
+.vscode/
+.idea/
+
+# 忽略自动生成的文档
+docs/
+
+# 忽略测试报告和覆盖率报告
+coverage/
+
+# 忽略一些编辑器和操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+demo.js

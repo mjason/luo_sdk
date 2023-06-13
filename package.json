@@ -1,0 +1,27 @@
+{
+  "name": "luo_sdk",
+  "version": "0.0.1",
+  "description": "使用node red 来创建大模型应用",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "vitest"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "MJ",
+  "license": "BSD",
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.0"
+  },
+  "dependencies": {
+    "got": "^13.0.0"
+  }
+}
