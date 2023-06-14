@@ -34,3 +34,14 @@ it('should be able to get completions stream', async () => {
 
   expect(completions).toBeDefined();
 });
+
+it('should be able to get embeddings', async () => {
+  const token = process.env.LISTENAI_ACCESS_TOKEN;
+  const client = new SparkClient({ token });
+
+  const embeddings = await client.embedding({ input: "this is token" });
+
+  console.log(embeddings);
+
+  expect(embeddings).toBeDefined();
+})

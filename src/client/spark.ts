@@ -56,7 +56,7 @@ export class SparkClient {
   private retry: number;
   constructor(options: SparkClientOptions) {
     const retry = options.limit || 0;
-    const url = options.url || 'https://api.listenai.com/v1/spark';
+    const url = options.url || 'https://api.listenai.com/v1';
 
     const clientOptions: ExtendOptions = {
       retry: {
@@ -93,9 +93,9 @@ export class SparkClient {
       }
     };
     if (stream) {
-      return this.completions_stream('completions', requestOptions, options.streamCallback);
+      return this.completions_stream('spark/completions', requestOptions, options.streamCallback);
     }
-    let response = await this.client.post<ChatCompletion>('completions', requestOptions);
+    let response = await this.client.post<ChatCompletion>('spark/completions', requestOptions);
     return response.body;
   }
 

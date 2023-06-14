@@ -1,6 +1,6 @@
 {
   "name": "luo_sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "使用node red 来创建大模型应用",
   "type": "module",
   "exports": "./dist/index.js",
